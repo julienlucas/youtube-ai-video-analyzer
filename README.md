@@ -1,3 +1,5 @@
+🤍 Add a star to the repo if you like. 🙏
+
 ![Fashion Style Analyzer Header](header.png)
 
 # YouTube Video Analyzer for Creators
