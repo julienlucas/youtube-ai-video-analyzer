@@ -26,7 +26,15 @@ git clone https://github.com/julienlucas/youtube-ai-video-analyzer
 
 2. **Install dependencies** :
 ```bash
+python3.12 -m venv venv
+source venv/bin/activate
+# Django Backend
 poetry install
+
+# React Frontend
+cd frontend
+pnpm install
+pnpm build
 ```
 
 3. **Configuration** :
