@@ -1,0 +1,114 @@
+@import "tailwindcss";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    font-family: "Helvetica", sans-serif;
+    line-height: 1.4;
+    color: #F5F5F5;
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+}
+
+@layer components {
+  body {
+    @apply bg-[#0A0A0A] px-4;
+  }
+  footer {
+    @apply py-24 pb-8;
+  }
+
+  .logo {
+    @apply absolute -top-16 left-0 font-black leading-6 text-2xl;
+    font-family: "Gabarito", sans-serif;
+  }
+
+  input {
+    @apply px-5 h-12 flex items-center focus:outline-none justify-center rounded border border-white mr-2.5 rounded-md;
+  }
+
+  input::placeholder {
+    @apply text-white;
+  }
+
+  button {
+    @apply bg-white font-medium text-black px-5 h-12 flex items-center justify-center rounded-md border border-transparent cursor-pointer transition-all duration-100 ease-in-out;
+    @apply hover:bg-transparent hover:text-white border border-white;
+    font-family: "Gabarito", sans-serif;
+    font-size: 18px;
+  }
+
+  header button {
+    @apply bg-[#1A1A1A] border-transparent text-white hover:bg-black hover:text-black hover:bg-white;
+  }
+
+  strong {
+    @apply font-bold;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-bold mb-4 leading-tight;
+    font-family: "Gabarito", sans-serif;
+  }
+
+  h1 {
+    @apply text-[38px] md:text-[38px] text-left leading-10 md:leading-11;
+    font-family: "Unbounded", sans-serif;
+  }
+
+  h2 {
+    @apply text-[34px] font-bold;
+  }
+
+  h3 {
+    @apply mt-2 mb-2 text-[24px] font-bold;
+  }
+
+  h4 {
+    @apply font-medium;
+  }
+
+  ul li, ol li {
+    @apply mb-1;
+  }
+
+  .thumbnails img {
+    @apply -ml-1
+  }
+}
+
+@keyframes bouncing {
+  0%,
+  100% {
+    transform: translateY(120%);
+    animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
+  }
+
+  50% {
+    transform: translateY(0);
+    animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
+  }
+}
+
+.animate-bouncing {
+  animation: bouncing 2s infinite;
+}
+
+.animation-delay-200 {
+  animation-delay: 200ms;
+}
+
+.animation-delay-400 {
+  animation-delay: 400ms;
+}
