@@ -1,4 +1,4 @@
-🤍 Add a star to the repo if you like. 🙏
+Add a star to the repo to support my work. 🙏
 
 ![Fashion Style Analyzer Header](header.png)
 

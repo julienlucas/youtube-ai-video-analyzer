@@ -4,6 +4,7 @@ version = "0.1.0"
 description = "Langchain agent Youtube video analyzer"
 authors = ["julienlucas <hello@julienlucas.com>"]
 readme = "README.md"
+package-mode = false
 
 [tool.poetry.dependencies]
 python = ">=3.11,<3.14"
