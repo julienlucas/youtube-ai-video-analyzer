@@ -1,68 +1,68 @@
-Add a star to the repo to support my work. 🙏
+Ajoutez une étoile au repo pour soutenir mon travail. 🙏
 
-![Fashion Style Analyzer Header](header.png)
+![En-tête de l'analyseur de style de mode](header.png)
 
-# YouTube Video Analyzer for Creators
+# Analyseur de vidéos YouTube pour créateurs
 
-An AI application that analyzes YouTube videos and generates detailed reports to help creators understand why their videos work.
+Une application d'IA qui analyse les vidéos YouTube et génère des rapports détaillés pour aider les créateurs à comprendre pourquoi leurs vidéos fonctionnent.
 
-## Features
+## Fonctionnalités
 
-- **Transcript Analysis** : Automatic script capture via Google YouTube API
-- **AI** : Analysis with GPT-5 to generate detailed insights on videos
-- **Metadata** : Display of statistics (views, likes, comments)
+- **Analyse des transcriptions** : Capture automatique des scripts via l'API Google YouTube
+- **IA** : Analyse avec GPT-5 pour générer des insights détaillés sur les vidéos
+- **Métadonnées** : Affichage des statistiques (vues, likes, commentaires)
 
-## Technical Stack
+## Stack technique
 
 - **Backend** : Django
-- **Frontend** : React with Vite
-- **AI** : GPT-5 via OpenAI API
-- **YouTube** : Google YouTube Data v3 API
+- **Frontend** : React avec Vite
+- **IA** : OpenAI GPT-5
+- **YouTube** : API Google YouTube Data v3
 
 ## Installation
 
-1. **Clone the project** :
+1. **Cloner le projet** :
 ```bash
 git clone https://github.com/julienlucas/youtube-ai-video-analyzer
 ```
 
-2. **Install dependencies** :
+2. **Installer les dépendances** :
 ```bash
 python3.12 -m venv venv
 source venv/bin/activate
-# Django Backend
+# Backend Django
 poetry install
 
-# React Frontend
+# Frontend React
 cd frontend
 pnpm install
 pnpm build
 ```
 
 3. **Configuration** :
-Create a `.env` file with your API keys :
+Créez un fichier `.env` avec vos clés API :
 
-go to https://platform.openai.com create your OpenAI API Key
-go to https://console.cloud.google.com/ to create you Google API Key (for youtube transcripts)
+allez sur https://platform.openai.com pour créer votre clé API OpenAI
+allez sur https://console.cloud.google.com/ pour créer votre clé API Google (pour les transcriptions YouTube)
 ```bash
-OPENAI_API_KEY=your_openai_api_key_here
-GOOGLE_API_KEY=your_google_api_key_here
+OPENAI_API_KEY=votre_cle_api_openai_ici
+GOOGLE_API_KEY=votre_cle_api_google_ici
 ```
 
-4. **Launch the application** :
+4. **Lancer l'application** :
 ```bash
-# Django Backend
+# Backend Django
 python manage.py runserver
 ```
 
-## Project Structure
+## Structure du projet
 
-- `backend/` : Django API with video management and AI analysis
-- `frontend/` : React interface with modern components
-- `static/` : Images and static resources
+- `backend/` : API Django avec gestion des vidéos et analyse IA
+- `frontend/` : Interface React avec composants modernes
+- `static/` : Images et ressources statiques
 
-## Usage
+## Utilisation
 
-1. Paste a YouTube video URL
-2. Click on "Analyze"
-3. View the detailed analysis report generated
+1. Collez l'URL d'une vidéo YouTube
+2. Cliquez sur "Analyser"
+3. Consultez le rapport d'analyse détaillé généré
