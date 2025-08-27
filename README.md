@@ -53,11 +53,6 @@ GOOGLE_API_KEY=your_google_api_key_here
 ```bash
 # Django Backend
 python manage.py runserver
-
-# React Frontend
-cd frontend
-pnpm install
-pnpm build
 ```
 
 ## Project Structure
